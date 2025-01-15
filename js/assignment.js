@@ -23,30 +23,29 @@ const answerFiveEl = document.getElementById("answer-five");
 const answerSixEl = document.getElementById("answer-six");
 const submissionBtn = document.getElementById("submission-btn");
 
-console.log(`Answer1: ${answerOneEl}`);
 
 function updateAnswerOne() {
-    answerOneEl.innerHTML(todos);   
+     console.log(todos);   
 }
 
 function updateAnswerTwo() {
-    answerTwoEl.innerText(todos[2]); 
+    console.log(todos[2]); 
 }
 
 function removeLastValue() {
     let popvalue = todos.pop();
 }
 
-function removeFirstValue() {
-    let shiftValue = todos.shift();    
+function reverseTodoList() {
+    todos.reverse();
 }
 
-function addShiftAndPopValues() {
-    todos.push(popValue, shiftValue);
+function removeFirstValue() {
+    let shiftValue = todos.shift();   
 }
 
 function updateAnswerFour() {
-    console.log(todos);
+  console.log(todos); 
 }
 
 function reverseTodoList() {
@@ -54,46 +53,32 @@ function reverseTodoList() {
 
 }
 
-function updateAnswerFive() {
-    console.log(todos);
+/*function updateAnswerFive() {
+  console.log(todos);
+}*/
+function addShiftAndPopValues() {
+    todos.push(shiftValue,popValue);
 }
+
 
 function updateAnswerSix() {
-    console.log(todos);
+    console.log(todos); 
 }
 
-function render() {
-    console.log(todos);
-}
+ /* function render() {         UNUSED
+  updateAnswerTwo(); 
+}*/
 
 submissionBtn.addEventListener("click", function () {
-   /* console.log('Window'); */
-   console.log("answer-one"); 
-     render();    
+     updateAnswerOne ();
+     updateAnswerTwo ();
+     removeLastValue();
+     updateAnswerFour();
+     reverseTodoList();
+     updateAnswerSix();
+     removeFirstValue();
+     addShiftAndPopValues();
+     updateAnswerSix();
+     /* render();    */ 
 });  
 
-/*
-
-orig was:
-
-submissionBtn.addEventListener("click", function () {
-    // Update this function
-    render();
-});  
-
-
-
-
-window.addEventListener("click", function() {
-	console.log('Window');
-    } , true);
-
-document.addEventListener("click", function() {
-	console.log('Document');
-    } , true);
-
-document.querySelector('submission-btn').addEventListener
-	("click", function(e) {
-		console.log(e.target.innerText = 'Submitted!');
-    } , true);
-*/
