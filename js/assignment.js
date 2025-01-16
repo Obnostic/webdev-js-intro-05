@@ -33,7 +33,7 @@ function updateAnswerTwo() {
 }
 
 function removeLastValue() {
-    let popvalue = todos.pop();
+    popValue = todos.pop();
 }
 
 function reverseTodoList() {
@@ -41,23 +41,21 @@ function reverseTodoList() {
 }
 
 function removeFirstValue() {
-    let shiftValue = todos.shift();   
-}
+    shiftValue = todos.shift();  
+} 
+
 
 function updateAnswerFour() {
   console.log(todos); 
 }
 
-function reverseTodoList() {
-    todos.reverse();
 
-}
-
-/*function updateAnswerFive() {
+/*function updateAnswerFive() {  REDUNDANT
   console.log(todos);
 }*/
+
 function addShiftAndPopValues() {
-    todos.push(shiftValue,popValue);
+   todos.push(shiftValue,popValue);
 }
 
 
@@ -65,11 +63,7 @@ function updateAnswerSix() {
     console.log(todos); 
 }
 
- /* function render() {         UNUSED
-  updateAnswerTwo(); 
-}*/
-
-submissionBtn.addEventListener("click", function () {
+function render() {        
      updateAnswerOne ();
      updateAnswerTwo ();
      removeLastValue();
@@ -79,6 +73,11 @@ submissionBtn.addEventListener("click", function () {
      removeFirstValue();
      addShiftAndPopValues();
      updateAnswerSix();
-     /* render();    */ 
-});  
+}
 
+submissionBtn.addEventListener("click", function () {
+    document.getElementById()
+
+    render();
+ 
+});
