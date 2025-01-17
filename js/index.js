@@ -4,6 +4,29 @@
 
 /* for future reference */
 
+
+// fun with mixed arrays
+/*
+let mixedTypeList = ["Kumquats", 42, "Pomegranites", false, 3.141718, -23];
+console.log(mixedTypeList);
+
+let willItPlay = mixedTypeList[3];
+console.log(willItPlay);
+
+
+console.log(mixedTypeList[2] + mixedTypeList[5]); // Adding a number to a string results in converting ALL to string 
+console.log(mixedTypeList[1] + mixedTypeList[5]);
+console.log(mixedTypeList[1] + mixedTypeList[3]); // Adding a bool to a var rejects the bool
+console.log(mixedTypeList[3] + mixedTypeList[2]); // Adding a string to a bool results in a string 
+console.log(mixedTypeList[5] * mixedTypeList[4]);
+console.log(Math.round(mixedTypeList[5] * mixedTypeList[4]));
+console.log(Math.round(mixedTypeList[5] * mixedTypeList[4] + 0.5)); //rounds down
+console.log(Math.round((mixedTypeList[5] * mixedTypeList[4] + 0.5))); //still rounds down
+let comeOnRoundUpAlready = (Math.round(mixedTypeList[4] + 0.5));
+console.log(comeOnRoundUpAlready);                              // yay!
+console.log(mixedTypeList[2] * mixedTypeList[4]);   // Grandma NaN, or Garlic NaN?
+*/
+/*
 let shoppingList = ["Apricots", "Pineapple", "Raisins"];
 console.log(shoppingList[0]);    // Output: "Apricots"
 
@@ -47,3 +70,4 @@ console.log (shoppingList.length);  // Output:  5
  for (let i = 0; i < shoppingList.length; i++) {
     console.log(`Yes, we have some ${shoppingList[i]}!  We have some ${shoppingList[i]} today!`);
 };                             // same as above but running through the whole array
+*/

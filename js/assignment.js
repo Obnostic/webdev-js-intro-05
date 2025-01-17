@@ -15,7 +15,7 @@ let popValue;
 
 // Declaring constant variables to store references to the elements
 // that will be updated by your code.
-/*const answerOneEl = document.getElementById("answer-one");
+/*const answerOneEl = document.getElementById("answer-one");         Couldn't work 'em, bypassed
 const answerTwoEl = document.getElementById("answer-two");
 const answerThreeEl = document.getElementById("answer-three");
 const answerFourEl = document.getElementById("answer-four");
@@ -24,11 +24,11 @@ const answerSixEl = document.getElementById("answer-six"); */
 const submissionBtn = document.getElementById("submission-btn"); 
 
 
-/* function updateAnswerOne() {
+/* function updateAnswerOne() {                    bypassed
      console.log(todos);
 } */
 
-/* function updateAnswerTwo() {
+/* function updateAnswerTwo() {                    bypassed
     console.log(todos[2]);     
 } */
 
@@ -45,12 +45,12 @@ function removeFirstValue() {
 } 
 
 
-/* function updateAnswerFour() {
+/* function updateAnswerFour() {                   bypassed   
   console.log(todos); 
 } */
 
 
-/*function updateAnswerFive() {  
+/*function updateAnswerFive() {                    bypassed
   console.log(todos);
 }*/
 
@@ -58,12 +58,11 @@ function addShiftAndPopValues() {
    todos.push(shiftValue,popValue);
 }
 
-
-/*function updateAnswerSix() {
+/*function updateAnswerSix() {                      bypassed
     console.log(todos); 
 } */
 
-/*function render() {        
+/*function render() {                               works, but couldn't utilize it fully
      updateAnswerOne ();
      updateAnswerTwo (); 
      removeLastValue();
